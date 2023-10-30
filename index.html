@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Audifonos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Reseñas</a></li>
+            <li><a href="#">Contactanos</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="img/audifono1.png" class="one" alt="">
+        </div>
+
+        <div class="home-text">
+            <h1>Recci W13 <br>audífonos inalámbricos</h1>
+            <h5>Experiencia de sonido inigualable</h5>
+            <h3>S/190.00</h3>
+            <a href="#" class="btn">Compra Ahora</a>
+        </div>
+        
+        
+    </section>
+
+    <div class="main">
+        <div class="row">
+            <li><img src="img/audifono1.png" alt="" onclick="slider('img/audifono1.png')"></li>
+        </div>
+        <div class="row row2">
+            <li><img src="img/audifono2.png" alt="" onclick="slider('img/audifono2.png')"></li>
+        </div>
+        <div class="row row3">
+            <li><img src="img/audifono3.png" alt="" onclick="slider('img/audifono3.png')"></li>
+        </div>
+    </div>
+
+    <a href="" class="bottom">Desplácese hacia abajo <i class='bx bx-down-arrow-circle' ></i></a>
+    
+    <script >
+        function slider(anything){
+            document.querySelector('.one').src = anything;
+        }
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () =>{
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
